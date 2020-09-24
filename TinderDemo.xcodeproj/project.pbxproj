@@ -22,6 +22,11 @@
 		D64F65B8251CF2BF009ED33C /* HTTPRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65B7251CF2BF009ED33C /* HTTPRequestTests.swift */; };
 		D64F65BC251CF337009ED33C /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65AE251CF1E9009ED33C /* HTTPRequest.swift */; };
 		D64F65C1251CF364009ED33C /* EndpointURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65C0251CF364009ED33C /* EndpointURL.swift */; };
+		D64F65C7251CF50F009ED33C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65C6251CF50F009ED33C /* UserService.swift */; };
+		D64F65D3251CF536009ED33C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65D2251CF536009ED33C /* UserModel.swift */; };
+		D64F65D7251CF55D009ED33C /* EndpointURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65C0251CF364009ED33C /* EndpointURL.swift */; };
+		D64F65DB251CF58A009ED33C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65C6251CF50F009ED33C /* UserService.swift */; };
+		D64F65DF251CF599009ED33C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65D2251CF536009ED33C /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,8 @@
 		D64F65AE251CF1E9009ED33C /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		D64F65B7251CF2BF009ED33C /* HTTPRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestTests.swift; sourceTree = "<group>"; };
 		D64F65C0251CF364009ED33C /* EndpointURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointURL.swift; sourceTree = "<group>"; };
+		D64F65C6251CF50F009ED33C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		D64F65D2251CF536009ED33C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,10 +187,28 @@
 		D64F65B3251CF232009ED33C /* BusinessLayer */ = {
 			isa = PBXGroup;
 			children = (
+				D64F65C5251CF501009ED33C /* API */,
+				D64F65CE251CF526009ED33C /* Services */,
+				D64F65D2251CF536009ED33C /* UserModel.swift */,
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		D64F65C5251CF501009ED33C /* API */ = {
+			isa = PBXGroup;
+			children = (
 				D64F65AE251CF1E9009ED33C /* HTTPRequest.swift */,
 				D64F65C0251CF364009ED33C /* EndpointURL.swift */,
 			);
-			path = BusinessLayer;
+			path = API;
+			sourceTree = "<group>";
+		};
+		D64F65CE251CF526009ED33C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D64F65C6251CF50F009ED33C /* UserService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,7 +450,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64F655F251CF0E8009ED33C /* ViewController.swift in Sources */,
+				D64F65D3251CF536009ED33C /* UserModel.swift in Sources */,
 				D64F65AF251CF1E9009ED33C /* HTTPRequest.swift in Sources */,
+				D64F65C7251CF50F009ED33C /* UserService.swift in Sources */,
 				D64F655B251CF0E8009ED33C /* AppDelegate.swift in Sources */,
 				D64F65C1251CF364009ED33C /* EndpointURL.swift in Sources */,
 				D64F655D251CF0E8009ED33C /* SceneDelegate.swift in Sources */,
@@ -436,8 +463,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64F65D7251CF55D009ED33C /* EndpointURL.swift in Sources */,
+				D64F65DB251CF58A009ED33C /* UserService.swift in Sources */,
 				D64F65BC251CF337009ED33C /* HTTPRequest.swift in Sources */,
 				D64F6572251CF0EA009ED33C /* TinderDemoTests.swift in Sources */,
+				D64F65DF251CF599009ED33C /* UserModel.swift in Sources */,
 				D64F65B8251CF2BF009ED33C /* HTTPRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
