@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,10 @@
 		D64F6567251CF0EA009ED33C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64F6565251CF0EA009ED33C /* LaunchScreen.storyboard */; };
 		D64F6572251CF0EA009ED33C /* TinderDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6571251CF0EA009ED33C /* TinderDemoTests.swift */; };
 		D64F657D251CF0EA009ED33C /* TinderDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F657C251CF0EA009ED33C /* TinderDemoUITests.swift */; };
+		D64F65AF251CF1E9009ED33C /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65AE251CF1E9009ED33C /* HTTPRequest.swift */; };
+		D64F65B8251CF2BF009ED33C /* HTTPRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65B7251CF2BF009ED33C /* HTTPRequestTests.swift */; };
+		D64F65BC251CF337009ED33C /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65AE251CF1E9009ED33C /* HTTPRequest.swift */; };
+		D64F65C1251CF364009ED33C /* EndpointURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65C0251CF364009ED33C /* EndpointURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,9 @@
 		D64F6578251CF0EA009ED33C /* TinderDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64F657C251CF0EA009ED33C /* TinderDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderDemoUITests.swift; sourceTree = "<group>"; };
 		D64F657E251CF0EA009ED33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D64F65AE251CF1E9009ED33C /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		D64F65B7251CF2BF009ED33C /* HTTPRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestTests.swift; sourceTree = "<group>"; };
+		D64F65C0251CF364009ED33C /* EndpointURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +118,6 @@
 				06A9F635C284C3477DF92CF5 /* Pods-TinderDemoTests.debug.xcconfig */,
 				2BFA8C8F03D5785E119468EB /* Pods-TinderDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -147,6 +153,7 @@
 				D64F6563251CF0EA009ED33C /* Assets.xcassets */,
 				D64F6565251CF0EA009ED33C /* LaunchScreen.storyboard */,
 				D64F6568251CF0EA009ED33C /* Info.plist */,
+				D64F65B3251CF232009ED33C /* BusinessLayer */,
 			);
 			path = TinderDemo;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 			children = (
 				D64F6571251CF0EA009ED33C /* TinderDemoTests.swift */,
 				D64F6573251CF0EA009ED33C /* Info.plist */,
+				D64F65B7251CF2BF009ED33C /* HTTPRequestTests.swift */,
 			);
 			path = TinderDemoTests;
 			sourceTree = "<group>";
@@ -167,6 +175,15 @@
 				D64F657E251CF0EA009ED33C /* Info.plist */,
 			);
 			path = TinderDemoUITests;
+			sourceTree = "<group>";
+		};
+		D64F65B3251CF232009ED33C /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D64F65AE251CF1E9009ED33C /* HTTPRequest.swift */,
+				D64F65C0251CF364009ED33C /* EndpointURL.swift */,
+			);
+			path = BusinessLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,7 +425,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64F655F251CF0E8009ED33C /* ViewController.swift in Sources */,
+				D64F65AF251CF1E9009ED33C /* HTTPRequest.swift in Sources */,
 				D64F655B251CF0E8009ED33C /* AppDelegate.swift in Sources */,
+				D64F65C1251CF364009ED33C /* EndpointURL.swift in Sources */,
 				D64F655D251CF0E8009ED33C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,7 +436,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64F65BC251CF337009ED33C /* HTTPRequest.swift in Sources */,
 				D64F6572251CF0EA009ED33C /* TinderDemoTests.swift in Sources */,
+				D64F65B8251CF2BF009ED33C /* HTTPRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
