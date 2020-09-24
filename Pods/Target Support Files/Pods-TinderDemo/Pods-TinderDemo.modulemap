@@ -1,0 +1,6 @@
+framework module Pods_TinderDemo {
+  umbrella header "Pods-TinderDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
