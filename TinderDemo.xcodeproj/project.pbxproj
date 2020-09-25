@@ -28,7 +28,6 @@
 		D64F65DB251CF58A009ED33C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65C6251CF50F009ED33C /* UserService.swift */; };
 		D64F65DF251CF599009ED33C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65D2251CF536009ED33C /* UserModel.swift */; };
 		D64F65E8251CF965009ED33C /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65E7251CF965009ED33C /* TinderViewController.swift */; };
-		D64F65EF251CF9A6009ED33C /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65E7251CF965009ED33C /* TinderViewController.swift */; };
 		D64F65F8251CFA8E009ED33C /* TinderViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65F7251CFA8E009ED33C /* TinderViewContract.swift */; };
 		D64F65FD251CFA9C009ED33C /* TinderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65FC251CFA9C009ED33C /* TinderInteractor.swift */; };
 		D64F6604251CFB04009ED33C /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6603251CFB04009ED33C /* SynchronizedArray.swift */; };
@@ -59,6 +58,40 @@
 		D64F6643251CFBBD009ED33C /* TinderCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6640251CFBBC009ED33C /* TinderCardContentView.swift */; };
 		D64F6644251CFBBD009ED33C /* TinderCardFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6641251CFBBC009ED33C /* TinderCardFooterView.swift */; };
 		D64F6645251CFBBD009ED33C /* TinderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6642251CFBBC009ED33C /* TinderCard.swift */; };
+		D64F664A251D7281009ED33C /* UserServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6649251D7281009ED33C /* UserServiceTests.swift */; };
+		D64F664F251D7293009ED33C /* TinderInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F664E251D7293009ED33C /* TinderInteractorTests.swift */; };
+		D64F6654251D72A3009ED33C /* UserDefaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6653251D72A3009ED33C /* UserDefaultTests.swift */; };
+		D64F6658251D72D7009ED33C /* CardAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F660B251CFB6F009ED33C /* CardAnimationOptions.swift */; };
+		D64F6659251D72D7009ED33C /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F660C251CFB6F009ED33C /* SwipeView.swift */; };
+		D64F665A251D72D7009ED33C /* SwipeCardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F660F251CFB6F009ED33C /* SwipeCardDelegate.swift */; };
+		D64F665B251D72D7009ED33C /* CardTransformProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F660D251CFB6F009ED33C /* CardTransformProvider.swift */; };
+		D64F665C251D72D7009ED33C /* SwipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6610251CFB6F009ED33C /* SwipeCard.swift */; };
+		D64F665D251D72D7009ED33C /* CardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F660E251CFB6F009ED33C /* CardAnimator.swift */; };
+		D64F665E251D72D7009ED33C /* CardLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F660A251CFB6F009ED33C /* CardLayoutProvider.swift */; };
+		D64F6662251D72DA009ED33C /* SwipeCardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6615251CFB6F009ED33C /* SwipeCardStack.swift */; };
+		D64F6663251D72DA009ED33C /* CardStackAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6614251CFB6F009ED33C /* CardStackAnimator.swift */; };
+		D64F6664251D72DA009ED33C /* CardStackTransformProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6616251CFB6F009ED33C /* CardStackTransformProvider.swift */; };
+		D64F6665251D72DA009ED33C /* SwipeCardStackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6617251CFB6F009ED33C /* SwipeCardStackDelegate.swift */; };
+		D64F6666251D72DA009ED33C /* CardStackStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6619251CFB6F009ED33C /* CardStackStateManager.swift */; };
+		D64F6667251D72DA009ED33C /* CardStackAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6613251CFB6F009ED33C /* CardStackAnimationOptions.swift */; };
+		D64F6668251D72DA009ED33C /* CardStackLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6618251CFB6F009ED33C /* CardStackLayoutProvider.swift */; };
+		D64F6669251D72DA009ED33C /* SwipeCardStackDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6612251CFB6F009ED33C /* SwipeCardStackDataSource.swift */; };
+		D64F666D251D72DC009ED33C /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F661A251CFB6F009ED33C /* SwipeDirection.swift */; };
+		D64F6671251D72E1009ED33C /* PanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6620251CFB6F009ED33C /* PanGestureRecognizer.swift */; };
+		D64F6672251D72E1009ED33C /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F661E251CFB6F009ED33C /* UIView+Extensions.swift */; };
+		D64F6673251D72E1009ED33C /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F661C251CFB6F009ED33C /* Array+Extensions.swift */; };
+		D64F6674251D72E1009ED33C /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F661D251CFB6F009ED33C /* CGVector+Extensions.swift */; };
+		D64F6675251D72E1009ED33C /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F661F251CFB6F009ED33C /* StringUtils.swift */; };
+		D64F6676251D72E1009ED33C /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6622251CFB6F009ED33C /* CGPoint+Extensions.swift */; };
+		D64F6677251D72E1009ED33C /* TapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6623251CFB6F009ED33C /* TapGestureRecognizer.swift */; };
+		D64F6678251D72E1009ED33C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6621251CFB6F009ED33C /* Animator.swift */; };
+		D64F667C251D72E5009ED33C /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6603251CFB04009ED33C /* SynchronizedArray.swift */; };
+		D64F6680251D72EB009ED33C /* TinderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6642251CFBBC009ED33C /* TinderCard.swift */; };
+		D64F6681251D72EB009ED33C /* TinderCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6640251CFBBC009ED33C /* TinderCardContentView.swift */; };
+		D64F6682251D72EB009ED33C /* TinderCardFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F6641251CFBBC009ED33C /* TinderCardFooterView.swift */; };
+		D64F668B251D72F0009ED33C /* TinderViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65F7251CFA8E009ED33C /* TinderViewContract.swift */; };
+		D64F668C251D72F0009ED33C /* TinderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65FC251CFA9C009ED33C /* TinderInteractor.swift */; };
+		D64F668D251D72F0009ED33C /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F65E7251CF965009ED33C /* TinderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +171,9 @@
 		D64F6640251CFBBC009ED33C /* TinderCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardContentView.swift; sourceTree = "<group>"; };
 		D64F6641251CFBBC009ED33C /* TinderCardFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardFooterView.swift; sourceTree = "<group>"; };
 		D64F6642251CFBBC009ED33C /* TinderCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCard.swift; sourceTree = "<group>"; };
+		D64F6649251D7281009ED33C /* UserServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTests.swift; sourceTree = "<group>"; };
+		D64F664E251D7293009ED33C /* TinderInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderInteractorTests.swift; sourceTree = "<group>"; };
+		D64F6653251D72A3009ED33C /* UserDefaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +272,9 @@
 				D64F6571251CF0EA009ED33C /* TinderDemoTests.swift */,
 				D64F6573251CF0EA009ED33C /* Info.plist */,
 				D64F65B7251CF2BF009ED33C /* HTTPRequestTests.swift */,
+				D64F6649251D7281009ED33C /* UserServiceTests.swift */,
+				D64F664E251D7293009ED33C /* TinderInteractorTests.swift */,
+				D64F6653251D72A3009ED33C /* UserDefaultTests.swift */,
 			);
 			path = TinderDemoTests;
 			sourceTree = "<group>";
@@ -660,13 +699,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64F666D251D72DC009ED33C /* SwipeDirection.swift in Sources */,
+				D64F6666251D72DA009ED33C /* CardStackStateManager.swift in Sources */,
+				D64F668D251D72F0009ED33C /* TinderViewController.swift in Sources */,
+				D64F6676251D72E1009ED33C /* CGPoint+Extensions.swift in Sources */,
+				D64F6673251D72E1009ED33C /* Array+Extensions.swift in Sources */,
 				D64F65D7251CF55D009ED33C /* EndpointURL.swift in Sources */,
+				D64F6665251D72DA009ED33C /* SwipeCardStackDelegate.swift in Sources */,
+				D64F6658251D72D7009ED33C /* CardAnimationOptions.swift in Sources */,
+				D64F6682251D72EB009ED33C /* TinderCardFooterView.swift in Sources */,
+				D64F665D251D72D7009ED33C /* CardAnimator.swift in Sources */,
 				D64F65DB251CF58A009ED33C /* UserService.swift in Sources */,
 				D64F65BC251CF337009ED33C /* HTTPRequest.swift in Sources */,
+				D64F6663251D72DA009ED33C /* CardStackAnimator.swift in Sources */,
 				D64F6572251CF0EA009ED33C /* TinderDemoTests.swift in Sources */,
+				D64F6654251D72A3009ED33C /* UserDefaultTests.swift in Sources */,
+				D64F6664251D72DA009ED33C /* CardStackTransformProvider.swift in Sources */,
+				D64F664A251D7281009ED33C /* UserServiceTests.swift in Sources */,
+				D64F668B251D72F0009ED33C /* TinderViewContract.swift in Sources */,
+				D64F6667251D72DA009ED33C /* CardStackAnimationOptions.swift in Sources */,
+				D64F6672251D72E1009ED33C /* UIView+Extensions.swift in Sources */,
+				D64F6675251D72E1009ED33C /* StringUtils.swift in Sources */,
+				D64F6669251D72DA009ED33C /* SwipeCardStackDataSource.swift in Sources */,
+				D64F664F251D7293009ED33C /* TinderInteractorTests.swift in Sources */,
+				D64F668C251D72F0009ED33C /* TinderInteractor.swift in Sources */,
+				D64F6677251D72E1009ED33C /* TapGestureRecognizer.swift in Sources */,
+				D64F665A251D72D7009ED33C /* SwipeCardDelegate.swift in Sources */,
+				D64F665B251D72D7009ED33C /* CardTransformProvider.swift in Sources */,
+				D64F6674251D72E1009ED33C /* CGVector+Extensions.swift in Sources */,
 				D64F65DF251CF599009ED33C /* UserModel.swift in Sources */,
+				D64F6668251D72DA009ED33C /* CardStackLayoutProvider.swift in Sources */,
+				D64F6659251D72D7009ED33C /* SwipeView.swift in Sources */,
+				D64F6662251D72DA009ED33C /* SwipeCardStack.swift in Sources */,
+				D64F6671251D72E1009ED33C /* PanGestureRecognizer.swift in Sources */,
+				D64F667C251D72E5009ED33C /* SynchronizedArray.swift in Sources */,
+				D64F6681251D72EB009ED33C /* TinderCardContentView.swift in Sources */,
+				D64F665E251D72D7009ED33C /* CardLayoutProvider.swift in Sources */,
+				D64F6678251D72E1009ED33C /* Animator.swift in Sources */,
 				D64F65B8251CF2BF009ED33C /* HTTPRequestTests.swift in Sources */,
-				D64F65EF251CF9A6009ED33C /* TinderViewController.swift in Sources */,
+				D64F665C251D72D7009ED33C /* SwipeCard.swift in Sources */,
+				D64F6680251D72EB009ED33C /* TinderCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
