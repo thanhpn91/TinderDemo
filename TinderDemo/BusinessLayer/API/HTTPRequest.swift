@@ -33,6 +33,12 @@ struct HTTPRequest: HTTPRequestable {
     
     private static var successCodes: Range<Int> = 200..<299
     
+    static func setupCache() {
+        let memoryCacheSize = 100*1024*1024
+        let diskCacheSize = 200*1024*1024
+        URLCache.configSharedCache(directory: nil, memory: memoryCacheSize, disk: diskCacheSize)
+    }
+    
     static func makeURLRequest(urlComponent: URLComponents?,
                                cachePolicy: NSURLRequest.CachePolicy = .returnCacheDataElseLoad,
                                timeoutInterval: TimeInterval = 5) -> URLRequest? {
@@ -82,5 +88,14 @@ struct HTTPRequest: HTTPRequestable {
         }
         
         completion(.success(data))
+    }
+}
+
+extension URLCache {
+    static func configSharedCache(directory: String? = Bundle.main.bundleIdentifier, memory: Int = 0, disk: Int = 0) {
+        URLCache.shared = {
+            let cacheDirectory = (NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0] as String).appendingFormat("/\(directory ?? "cache")/" )
+            return URLCache(memoryCapacity: memory, diskCapacity: disk, diskPath: cacheDirectory)
+        }()
     }
 }
